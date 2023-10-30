@@ -1,6 +1,6 @@
 # Galaxy-Front-Page
 
-This is the source code to build the [Galaxy-Front-Page](https://github.com/quadram-institute-bioscience/galaxy-front-page-html) using [HUGO](https://gohugo.io/) and [hugo-bootstrap-templates](galaxy-front-page/README.original.md).
+This is the source code to build the [Galaxy-Front-Page](https://quadram-institute-bioscience.github.io/galaxy-front-page/) using [HUGO](https://gohugo.io/) and [hugo-bootstrap-templates](galaxy-front-page/README.original.md).
 
 ## Contribution and Update
 
