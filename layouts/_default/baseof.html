@@ -13,7 +13,7 @@
     {{ .Scratch.Add "class" " list" -}}
 {{ end -}}
 <body class="{{ .Scratch.Get `class` }}">
-    {{- partial "header/header.html" . -}}
+    <!-- {{- partial "header/header.html" . -}} -->
     <div id="content">
         {{ if and (.Site.Params.options.breadCrumb) (ne .Kind "home") -}}
             {{- partial "header/breadcrumb.html" . -}}
@@ -21,6 +21,6 @@
         {{- block "main" . }}{{- end }}
     </div>
     {{ partial "footer/footer.html" . }}
-    {{ partial "footer/script-footer.html" . }}
+    <!-- {{ partial "footer/script-footer.html" . }} -->
 </body>
 </html>

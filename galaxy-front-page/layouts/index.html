@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="section bd-masthead">
+  <div class="container-xxl">
+    <div class="col-md-8 mx-auto text-center my-5">
+      <!-- <img class="d-block mx-auto mb-3" src="{{ `images/logo.svg` | relURL }}" width="150" height="150" alt="Bootstrap"> -->
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <!-- <img class="mb-3" src="https://quadram.ac.uk/wp-content/uploads/2018/06/QI-logo-colour-copy.png" width="200" height="280" alt="QIB"> -->
+          <img class="mb-3" src="{{ `qib.png` }}" width="200" height="280" alt="QIB">
+        </div>
+        <div class="col-md-8">
+          <!-- <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1> -->
+        <p class="lead mb-4 text-justify-important">{{ .Site.Params.Description }}</p>
+    <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://galaxy.quadram.ac.uk/tours" role="button" target="_blank">Are you new to Galaxy ?</a>
+    <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://quadram-institute.atlassian.net/servicedesk/customer/portals" role="button" target="_blank">Do you need help ?</a>  
+      </div>
+      </div>
+      
+      <!-- <p class="text-muted mb-0">Open-source MIT Licensed.</p> -->
+      <div class="alert alert-danger" role="alert">
+        <img src="{{ `images/logo.svg` | relURL }}" width="20" height="20" alt="Bootstrap"> Galaxy is not suited for long-term data storage. We encourage users to promptly download and store their data securely, as <strong>any dataset older than 6 months will be subject to regular deletion</strong>. Your understanding and cooperation in ensuring the optimal performance of Galaxy for the entire community are greatly appreciated.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="row">
+    <!-- Workflows - 6 Columns Wide -->
+    <div class="col-md-6 d-flex flex-column h-100">
+      {{ partial "workflows" . }}
+    </div>
+
+    <!-- How-to - 6 Columns Wide -->
+    <div class="col-md-6 d-flex flex-column h-100">
+      {{ partial "how-to" . }}
+    </div>
+  </div>
+</section>
+<section class="section container">
+  <h3 class="text-secondary text-center">Status</h3>
+  <div class="row">
+    {{ partial "status" . }}
+  </div>  
+</section>
+{{ end }}

@@ -34,8 +34,8 @@
             <div class="col-lg-3 col-sm-12">
                 {{ if isset .Params "images" }}
                     {{ with .Resources.GetMatch (index .Params.Images 0) }}
-                        {{ $image := .Resize "200x webp" }}
-                        <img class="img-fluid rounded w-100" src="{{ $image.Permalink }}" loading="lazy" {{/* width="{{ $image.Width }}" height="{{ $image.Height }}" */}} alt="featured image {{.Title }}"/>
+                        {{ $image := .Resize "800x webp" }}
+                        <img class="img-fluid rounded w-70" src="{{ $image.Permalink }}" loading="lazy" {{/* width="{{ $image.Width }}" height="{{ $image.Height }}" */}} alt="featured image {{.Title }}"/>
                     {{ end }}
                 {{ end }}
             </div>

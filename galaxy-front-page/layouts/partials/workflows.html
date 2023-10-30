@@ -1,0 +1,26 @@
+<div class="row-cols-1 g-4">
+    <div class="card">
+        <h5 class="card-header">Workflows</h5>
+        <div class="card-body">
+            <ul class="list-unstyled mb-0">
+                {{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Section" "workflows" ) }}
+                <li>
+                    <a class="text-primary text-decoration-none" href="{{ .Permalink }}">
+                        {{ .Title }}
+                    </a>
+                    <p class="text-text">
+                        {{ with .Params.description | truncate 60 }}
+                            {{ . }}
+                        {{ else }}
+                            {{ .Summary | truncate 60 }}
+                        {{ end }}
+                    </p>
+                </li>
+                {{ end }}
+            </ul>
+            <a href="{{ (.Site.GetPage "section" "workflows").Permalink }}" >
+                View All Workflows
+            </a>
+        </div>
+    </div>
+</div>
