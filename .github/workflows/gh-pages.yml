@@ -20,17 +20,17 @@ jobs:
         with:
           hugo-version: '0.119.0'
           extended: true
-      - name: List all content in the repo
-        run: |
-          echo "Listing all content in the repository:"
-          find . -type f
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+      # - name: List all content in the repo
+      #   run: |
+      #     echo "Listing all content in the repository:"
+      #     find . -type f
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '16'
       
-      - name: NPM Install
-        run: npm install
+      # - name: NPM Install
+      #   run: npm install
 
       - name: Build for test
         run: hugo --source galaxy-front-page --cleanDestinationDir --enableGitInfo --gc
