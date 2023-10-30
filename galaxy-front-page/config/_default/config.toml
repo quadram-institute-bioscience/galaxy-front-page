@@ -12,7 +12,7 @@ timeZone = 'Europe/London'
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 theme = "hugo-bootstrap-theme"
-themesdir = "../.."
+themesdir = "../themes"
 
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
@@ -20,7 +20,7 @@ enableGitInfo = true
 enableEmoji = true
 #sectionPagesMenu = "main"
 #googleAnalytics = "UA-1511XXXX-X"
-publishDir = "../galaxy-front-page-site"
+#publishDir = "../galaxy-front-page-site"
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
   lastmod = ["lastmod", ":fileModTime", ":default"]
