@@ -40,11 +40,11 @@ jobs:
         if: ${{ false }}
            
       - name: Build
-        run: hugo --source exampleSite --minify --cleanDestinationDir --enableGitInfo --gc --printPathWarnings --templateMetrics
+        run: hugo --source galaxy-front-page -d public --minify --cleanDestinationDir --enableGitInfo --gc --printPathWarnings --templateMetrics
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./exampleSite/public
+          github_token: ${{ secrets.GHTK }}
+          publish_dir: ./public
