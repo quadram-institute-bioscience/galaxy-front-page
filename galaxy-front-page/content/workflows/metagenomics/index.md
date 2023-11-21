@@ -2,7 +2,7 @@
 title: "Short Read Metagenomics"
 description: ""
 date: 2023-09-24
-draft: false
+draft: true
 images: ["metagenomics-1.png"]
 categories: ["workflows", "metagenomics"]
 tags: ["metagenomics", "short-read"]

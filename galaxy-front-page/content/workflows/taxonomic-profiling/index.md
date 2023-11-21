@@ -2,7 +2,7 @@
 title: "Taxonomic Profiling"
 description: ""
 date: 2022-06-08
-draft: false
+draft: true
 images: ["profilling-1.png"]
 categories: ["workflows", "metagenomics", "short-read"]
 tags: ["profiling", "short-read", "metagenomics"]

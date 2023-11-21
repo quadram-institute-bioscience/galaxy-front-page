@@ -2,7 +2,7 @@
 title: "De-novo assembly long read"
 description: "De-novo assembly refers to the process of assembling genomes from scratch, without the use of a reference genome."
 date: 2023-05-30
-draft: false
+draft: true
 images: ["dna.png"]
 categories: ["workflows"]
 tags: ["nanopore","long-read","assembly"]
